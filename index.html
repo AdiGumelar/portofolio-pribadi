@@ -1,0 +1,654 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Portfolio pribadi modern untuk lulusan Teknologi Informasi." />
+    <title>Portfolio Adi Gumelar</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div id="loading-screen" class="loading-screen">
+      <div class="loader-content text-center">
+        <div class="modern-loader" role="status" aria-label="Loading">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <p class="loading-text mt-3 mb-0">Preparing Portfolio</p>
+      </div>
+    </div>
+
+    <nav class="navbar navbar-expand-lg fixed-top portfolio-navbar">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="#home"> <span class="brand-mark">P</span> Portfolio </a>
+
+        <div class="nav-controls d-lg-none">
+          <button id="theme-toggle-mobile" class="theme-toggle" type="button" aria-label="Toggle dark mode">
+            <i class="bi bi-moon-stars"></i>
+          </button>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+
+        <div class="collapse navbar-collapse" id="mainNavbar">
+          <ul class="navbar-nav ms-auto align-items-lg-center">
+            <li class="nav-item">
+              <a class="nav-link" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#education">Education</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#experience">Experience</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projects">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#skills">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-contact" href="#contact">Contact</a>
+            </li>
+          </ul>
+          <button id="theme-toggle" class="theme-toggle ms-lg-3 d-none d-lg-inline-flex" type="button" aria-label="Toggle dark mode">
+            <i class="bi bi-moon-stars"></i>
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <section id="home" class="hero-section">
+        <div class="container">
+          <div class="row align-items-center gy-5">
+            <div class="col-lg-6">
+              <div class="hero-content" data-aos="fade-right">
+                <span class="hero-badge">
+                  <i class="bi bi-stars"></i>
+                  Portfolio Pribadi
+                </span>
+                <h1 class="hero-title">Laurentius Sasmita Adi Gumelar</h1>
+                <h2 class="hero-profession"><span id="typing-text"></span><span class="typing-cursor">|</span></h2>
+                <p class="hero-description">
+                  Lulusan Teknologi Informasi Universitas Negeri Yogyakarta dengan minat dalam pengembangan sistem, teknologi informasi, dan solusi digital. Memiliki pengalaman dalam pengembangan aplikasi serta pemanfaatan teknologi untuk
+                  mendukung kebutuhan bisnis dan operasional. Mampu bekerja secara kolaboratif, memiliki kemampuan analitis yang baik, serta cepat beradaptasi dengan teknologi baru.
+                </p>
+                <div class="hero-actions d-flex flex-wrap gap-3">
+                  <a href="CV - IT.pdf" class="btn btn-primary-custom">
+                    <i class="bi bi-download"></i>
+                    Download CV
+                  </a>
+                  <a href="#contact" class="btn btn-outline-custom">
+                    <i class="bi bi-send"></i>
+                    Hubungi Saya
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-6">
+              <div class="hero-visual" data-aos="fade-left" data-aos-delay="150">
+                <div class="profile-glow"></div>
+                <div class="profile-frame">
+                  <img src="Foto New.jpeg" alt="Foto profil Laurentius Sasmita Adi Gumelar" class="profile-photo" />
+                </div>
+                <div class="hero-floating-card hero-card-top">
+                  <i class="bi bi-code-slash"></i>
+                  <span>Digital Solutions</span>
+                </div>
+                <div class="hero-floating-card hero-card-bottom">
+                  <i class="bi bi-cpu"></i>
+                  <span>IT Graduate</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="about-section section-muted">
+        <div class="container">
+          <div class="row align-items-center gy-5">
+            <div class="col-lg-5">
+              <div class="about-intro" data-aos="fade-right">
+                <span class="section-badge">
+                  <i class="bi bi-person-lines-fill"></i>
+                  About Me
+                </span>
+                <h2 class="section-title">Mengenal Saya Lebih Dekat</h2>
+                <p class="section-description">
+                  Lulusan Sarjana Teknologi Informasi dari Universitas Negeri Yogyakarta dengan pemahaman dalam pengembangan sistem, pengelolaan basis data, dan pemanfaatan teknologi informasi untuk mendukung kebutuhan organisasi. Memiliki
+                  kemampuan analitis yang baik, mampu bekerja secara kolaboratif dalam tim, serta cepat beradaptasi dengan teknologi baru. Siap berkontribusi dalam berbagai bidang teknologi informasi dan pengembangan solusi digital.
+                </p>
+              </div>
+            </div>
+
+            <div class="col-lg-7">
+              <div class="about-card" data-aos="fade-left" data-aos-delay="100">
+                <div class="row g-4">
+                  <div class="col-sm-6">
+                    <div class="about-feature">
+                      <i class="bi bi-lightbulb"></i>
+                      <div>
+                        <h3>Adaptif</h3>
+                        <p>Cepat beradaptasi dengan teknologi baru dan lingkungan kerja yang dinamis.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="about-feature">
+                      <i class="bi bi-people"></i>
+                      <div>
+                        <h3>Kolaboratif</h3>
+                        <p>Mampu bekerja dalam tim untuk mencapai tujuan secara efektif.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="about-feature">
+                      <i class="bi bi-graph-up-arrow"></i>
+                      <div>
+                        <h3>Analitis</h3>
+                        <p>Memiliki kemampuan analitis yang baik dalam memahami kebutuhan dan masalah.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="about-feature">
+                      <i class="bi bi-mortarboard"></i>
+                      <div>
+                        <h3>Akademik</h3>
+                        <p>Lulusan Teknologi Informasi dengan capaian IPK 3.76/4.00.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row g-4 about-stats">
+            <div class="col-6 col-lg-3" data-aos="zoom-in" data-aos-delay="50">
+              <div class="stat-card">
+                <div class="stat-icon"><i class="bi bi-folder2-open"></i></div>
+                <h3><span class="counter" data-target="2">0</span>+</h3>
+                <p>Projects</p>
+              </div>
+            </div>
+            <div class="col-6 col-lg-3" data-aos="zoom-in" data-aos-delay="120">
+              <div class="stat-card">
+                <div class="stat-icon"><i class="bi bi-briefcase"></i></div>
+                <h3><span class="counter" data-target="1">0</span></h3>
+                <p>Pengalaman Kerja</p>
+              </div>
+            </div>
+            <div class="col-6 col-lg-3" data-aos="zoom-in" data-aos-delay="190">
+              <div class="stat-card">
+                <div class="stat-icon"><i class="bi bi-stack"></i></div>
+                <h3><span class="counter" data-target="10">0</span>+</h3>
+                <p>Teknologi</p>
+              </div>
+            </div>
+            <div class="col-6 col-lg-3" data-aos="zoom-in" data-aos-delay="260">
+              <div class="stat-card">
+                <div class="stat-icon"><i class="bi bi-award"></i></div>
+                <h3>Fresh</h3>
+                <p>Graduate</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="education" class="timeline-section">
+        <div class="container">
+          <div class="section-heading text-center" data-aos="fade-up">
+            <span class="section-badge">
+              <i class="bi bi-mortarboard"></i>
+              Education
+            </span>
+            <h2 class="section-title">Riwayat Pendidikan</h2>
+            <p class="section-description mx-auto">Latar belakang akademik yang membentuk fondasi saya dalam pengembangan sistem, information systems, pengelolaan data, dan penerapan teknologi informasi.</p>
+          </div>
+
+          <div class="timeline-wrapper">
+            <div class="timeline-item" data-aos="fade-up" data-aos-delay="100">
+              <div class="timeline-marker">
+                <i class="bi bi-building"></i>
+              </div>
+              <div class="timeline-card">
+                <div class="timeline-card-header">
+                  <div>
+                    <span class="timeline-label">Universitas Negeri Yogyakarta</span>
+                    <h3>Teknologi Informasi</h3>
+                  </div>
+                  <span class="timeline-date">2021 - 2025</span>
+                </div>
+
+                <div class="education-meta">
+                  <div class="meta-box">
+                    <span>Program Studi</span>
+                    <strong>Teknologi Informasi</strong>
+                  </div>
+                  <div class="meta-box">
+                    <span>IPK</span>
+                    <strong>3.76 / 4.00</strong>
+                  </div>
+                </div>
+
+                <div class="course-list">
+                  <span>Pemrograman</span>
+                  <span>Pemrograman Web</span>
+                  <span>Basis Data</span>
+                  <span>Aplikasi Web</span>
+                  <span>Manajemen Proyek</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="experience" class="timeline-section section-muted">
+        <div class="container">
+          <div class="section-heading text-center" data-aos="fade-up">
+            <span class="section-badge">
+              <i class="bi bi-briefcase"></i>
+              Work Experience
+            </span>
+            <h2 class="section-title">Pengalaman Kerja</h2>
+            <p class="section-description mx-auto">Pengalaman profesional yang mengasah komunikasi, analisis masalah, problem solving, dan manajemen waktu.</p>
+          </div>
+
+          <div class="timeline-wrapper">
+            <div class="timeline-item" data-aos="fade-up" data-aos-delay="100">
+              <div class="timeline-marker">
+                <i class="bi bi-headset"></i>
+              </div>
+              <div class="timeline-card">
+                <div class="timeline-card-header">
+                  <div>
+                    <span class="timeline-label">Shopee</span>
+                    <h3>Customer Service Live Chat</h3>
+                  </div>
+                  <span class="timeline-date">November 2025 - Januari 2026</span>
+                </div>
+
+                <ul class="experience-list">
+                  <li>Menangani komunikasi pelanggan melalui live chat dan ticketing system.</li>
+                  <li>Mengelola dan merespons pertanyaan pelanggan.</li>
+                  <li>Menganalisis permasalahan pelanggan.</li>
+                  <li>Memberikan solusi sesuai SOP.</li>
+                  <li>Mengembangkan kemampuan komunikasi, problem solving, dan manajemen waktu.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="projects-section">
+        <div class="container">
+          <div class="section-heading text-center" data-aos="fade-up">
+            <span class="section-badge">
+              <i class="bi bi-kanban"></i>
+              Projects
+            </span>
+            <h2 class="section-title">Portfolio Projects</h2>
+            <p class="section-description mx-auto">Beberapa project sistem informasi dan solusi digital yang pernah dikerjakan dengan fokus pada kebutuhan pengguna, pengelolaan data, dan fungsi sistem.</p>
+          </div>
+
+          <div class="row g-4">
+            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+              <article class="project-card">
+                <div class="project-thumbnail">
+                  <img src="Emoka.png" alt="Tampilan Sistem Informasi Pemesanan Konveksi Emoka" />
+                </div>
+                <div class="project-content">
+                  <div class="project-header">
+                    <div>
+                      <span class="project-period">April - Agustus 2025</span>
+                      <h3>Sistem Informasi Pemesanan Konveksi</h3>
+                    </div>
+                  </div>
+
+                  <div class="project-tech">
+                    <span>Laravel</span>
+                    <span>MySQL</span>
+                    <span>Bootstrap</span>
+                    <span>JavaScript</span>
+                  </div>
+
+                  <p class="project-description">
+                    Mengembangkan sistem informasi pemesanan konveksi untuk membantu pengelolaan data pesanan dan meningkatkan efisiensi proses administrasi. Mengimplementasikan fitur pengelolaan pesanan, pembayaran, dan dokumentasi sistem.
+                  </p>
+
+                  <div class="project-actions">
+                    <a href="#" class="btn btn-primary-custom">
+                      <i class="bi bi-box-arrow-up-right"></i>
+                      Live Demo
+                    </a>
+                    <a href="https://github.com/AdiGumelar/emokaKonveksi.git" class="btn btn-outline-custom">
+                      <i class="bi bi-github"></i>
+                      Source Code
+                    </a>
+                  </div>
+                </div>
+              </article>
+            </div>
+
+            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="180">
+              <article class="project-card">
+                <div class="project-thumbnail">
+                  <img src="Kapingrejo.png" alt="Tampilan Sistem Informasi Profil Dusun Kapingrejo" />
+                </div>
+                <div class="project-content">
+                  <div class="project-header">
+                    <div>
+                      <span class="project-period">Juli - September 2024</span>
+                      <h3>Sistem Informasi Profil Dusun Kapingrejo</h3>
+                    </div>
+                  </div>
+
+                  <div class="project-tech">
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>Bootstrap</span>
+                    <span>JavaScript</span>
+                  </div>
+
+                  <p class="project-description">Membangun sistem informasi profil dusun untuk menampilkan informasi wilayah, kegiatan masyarakat, potensi lokal, dan berbagai informasi yang dapat diakses secara digital.</p>
+
+                  <div class="project-actions">
+                    <a href="https://dusun-kapingrejo.vercel.app/" class="btn btn-primary-custom">
+                      <i class="bi bi-box-arrow-up-right"></i>
+                      Live Demo
+                    </a>
+                    <a href="https://github.com/AdiGumelar/DusunKapingrejo.git" class="btn btn-outline-custom">
+                      <i class="bi bi-github"></i>
+                      Source Code
+                    </a>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="skills" class="skills-section section-muted">
+        <div class="container">
+          <div class="section-heading text-center" data-aos="fade-up">
+            <span class="section-badge">
+              <i class="bi bi-tools"></i>
+              Training & Skills
+            </span>
+            <h2 class="section-title">Pelatihan dan Keahlian</h2>
+            <p class="section-description mx-auto">Kombinasi pelatihan teknologi, kemampuan pengembangan sistem, pengelolaan data, dan keterampilan profesional untuk mendukung solusi digital.</p>
+          </div>
+
+          <div class="training-card" data-aos="fade-up" data-aos-delay="100">
+            <div class="training-icon">
+              <i class="bi bi-laptop"></i>
+            </div>
+            <div class="training-content">
+              <span class="training-label">Training</span>
+              <div class="training-header">
+                <h3>MSIB Batch 6 - Fullstack Web Development</h3>
+                <span>Februari - Juni 2024</span>
+              </div>
+              <div class="training-materials">
+                <span>Flask</span>
+                <span>Bootstrap</span>
+                <span>MongoDB</span>
+                <span>AJAX</span>
+                <span>jQuery</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="training-card" data-aos="fade-up" data-aos-delay="150">
+            <div class="training-icon">
+              <i class="bi bi-code-slash"></i>
+            </div>
+            <div class="training-content">
+              <span class="training-label">Training</span>
+              <div class="training-header">
+                <h3>Dicoding - Belajar Membuat Front-End Web untuk Pemula</h3>
+                <span>Juni 2026</span>
+              </div>
+              <div class="training-materials">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+                <span>DOM</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="row g-4 skills-grid">
+            <div class="col-md-6 col-xl-4" data-aos="fade-up" data-aos-delay="100">
+              <div class="skill-card">
+                <div class="skill-card-header">
+                  <div class="skill-icon"><i class="bi bi-window"></i></div>
+                  <h3>Frontend</h3>
+                </div>
+                <div class="skill-badges">
+                  <span>HTML</span>
+                  <span>CSS</span>
+                  <span>JavaScript</span>
+                  <span>Vue.js</span>
+                  <span>Bootstrap</span>
+                  <span>jQuery</span>
+                </div>
+                <div class="skill-progress">
+                  <div class="progress-label">
+                    <span>Proficiency</span>
+                    <strong>85%</strong>
+                  </div>
+                  <div class="progress">
+                    <div class="progress-bar skill-progress-bar" data-width="85"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-xl-4" data-aos="fade-up" data-aos-delay="150">
+              <div class="skill-card">
+                <div class="skill-card-header">
+                  <div class="skill-icon"><i class="bi bi-server"></i></div>
+                  <h3>Backend</h3>
+                </div>
+                <div class="skill-badges">
+                  <span>Laravel</span>
+                  <span>Flask</span>
+                </div>
+                <div class="skill-progress">
+                  <div class="progress-label">
+                    <span>Proficiency</span>
+                    <strong>78%</strong>
+                  </div>
+                  <div class="progress">
+                    <div class="progress-bar skill-progress-bar" data-width="78"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-xl-4" data-aos="fade-up" data-aos-delay="200">
+              <div class="skill-card">
+                <div class="skill-card-header">
+                  <div class="skill-icon"><i class="bi bi-database"></i></div>
+                  <h3>Database</h3>
+                </div>
+                <div class="skill-badges">
+                  <span>MySQL</span>
+                  <span>MongoDB</span>
+                </div>
+                <div class="skill-progress">
+                  <div class="progress-label">
+                    <span>Proficiency</span>
+                    <strong>80%</strong>
+                  </div>
+                  <div class="progress">
+                    <div class="progress-bar skill-progress-bar" data-width="80"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-xl-4" data-aos="fade-up" data-aos-delay="250">
+              <div class="skill-card">
+                <div class="skill-card-header">
+                  <div class="skill-icon"><i class="bi bi-wrench-adjustable"></i></div>
+                  <h3>Tools & Software</h3>
+                </div>
+                <div class="skill-badges">
+                  <span>Visual Studio Code</span>
+                  <span>Microsoft Office</span>
+                  <span>Figma</span>
+                </div>
+                <div class="skill-progress">
+                  <div class="progress-label">
+                    <span>Proficiency</span>
+                    <strong>82%</strong>
+                  </div>
+                  <div class="progress">
+                    <div class="progress-bar skill-progress-bar" data-width="82"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-xl-8" data-aos="fade-up" data-aos-delay="300">
+              <div class="skill-card skill-card-wide">
+                <div class="skill-card-header">
+                  <div class="skill-icon"><i class="bi bi-chat-square-heart"></i></div>
+                  <h3>Professional Skills</h3>
+                </div>
+                <div class="skill-badges">
+                  <span>Problem Solving</span>
+                  <span>Teamwork</span>
+                  <span>Communication</span>
+                  <span>Time Management</span>
+                </div>
+                <div class="skill-progress">
+                  <div class="progress-label">
+                    <span>Proficiency</span>
+                    <strong>88%</strong>
+                  </div>
+                  <div class="progress">
+                    <div class="progress-bar skill-progress-bar" data-width="88"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="contact-section">
+        <div class="container">
+          <div class="section-heading text-center" data-aos="fade-up">
+            <span class="section-badge">
+              <i class="bi bi-envelope-paper"></i>
+              Contact
+            </span>
+            <h2 class="section-title">Hubungi Saya</h2>
+            <p class="section-description mx-auto">Terbuka untuk diskusi project, kolaborasi, dan peluang kerja di bidang teknologi informasi.</p>
+          </div>
+
+          <div class="row g-4 justify-content-center">
+            <div class="col-lg-8" data-aos="fade-up" data-aos-delay="100">
+              <div class="contact-info-card">
+                <h3>Informasi Kontak</h3>
+                <p>Silakan hubungi saya melalui email atau WhatsApp.</p>
+
+                <div class="contact-info-list">
+                  <a href="#" class="contact-info-item">
+                    <i class="bi bi-person"></i>
+                    <span>
+                      <small>Nama</small>
+                      Laurentius Sasmita Adi Gumelar
+                    </span>
+                  </a>
+                  <a href="https://maps.google.com/?q=Klaten,%20Jawa%20Tengah" target="_blank" rel="noopener" class="contact-info-item">
+                    <i class="bi bi-geo-alt"></i>
+                    <span>
+                      <small>Lokasi</small>
+                      Klaten, Jawa Tengah
+                    </span>
+                  </a>
+                  <a href="mailto:adigum17@gmail.com" class="contact-info-item">
+                    <i class="bi bi-envelope"></i>
+                    <span>
+                      <small>Email</small>
+                      adigum17@gmail.com
+                    </span>
+                  </a>
+                  <a href="https://wa.me/6285326996149" target="_blank" rel="noopener" class="contact-info-item">
+                    <i class="bi bi-whatsapp"></i>
+                    <span>
+                      <small>WhatsApp</small>
+                      +6285326996149
+                    </span>
+                  </a>
+                </div>
+
+                <div class="map-placeholder">
+                  <i class="bi bi-map"></i>
+                  <div>
+                    <strong>Google Maps</strong>
+                    <span>Klaten, Jawa Tengah</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="row align-items-center gy-3">
+          <div class="col-md-6 text-center text-md-start">
+            <p class="mb-0">&copy; <span id="current-year"></span> Portfolio Adi Gumelar.</p>
+          </div>
+          <div class="col-md-6">
+            <div class="footer-social d-flex justify-content-center justify-content-md-end gap-3">
+              <a href="https://www.linkedin.com/in/laurentius-sasmita-adi-gumelar-875b18315/" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+              <a href="https://github.com/AdiGumelar/" aria-label="GitHub"><i class="bi bi-github"></i></a>
+              <a href="https://www.instagram.com/adigumelar_/" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+              <a href="mailto:adigum17@gmail.com" aria-label="Email"><i class="bi bi-envelope-fill"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <button id="scroll-to-top" class="scroll-to-top" type="button" aria-label="Scroll to top">
+      <i class="bi bi-arrow-up"></i>
+    </button>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
